@@ -1,0 +1,40 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todos/new
+Content-Type: application/json
+
+{
+    "text": "do dishes"
+}
+
+
+###
+
+POST http://localhost:3001/todos/new
+Content-Type: application/json
+
+{
+    "text": "Renew OHIP"
+}
+
+###
+
+DELETE http://localhost:3001/todos/653972ed5ba3d0ef541fd0b7
+
+
+###
+
+PUT http://localhost:3001/todos/text/6540fca671d21ae4334c56b0
+Content-Type: application/json
+
+{
+    "text":"Visit clinic some time this week" 
+}
+
+###
+
+PUT http://localhost:3001/todos/complete/6540fca671d21ae4334c56b0
+
+
